@@ -504,9 +504,6 @@ textarea {
   color: #2196f3;
 }
 
-.clients__logo {
-  width: 100%;
-}
 @media screen and (min-width: 480px) {
   .clients__logo {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
