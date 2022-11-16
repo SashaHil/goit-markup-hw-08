@@ -1,0 +1,120 @@
+.works__filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.works__btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  background-color: $bcg-color-button;
+  color: $text-color;
+
+  transition: color $duration-timing-function,
+    background-color $duration-timing-function,
+    box-shadow $duration-timing-function;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works__items {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.works__items .link {
+  display: block;
+
+  transition: box-shadow $duration-timing-function;
+}
+
+.works__items .link:hover,
+.works__items .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.works__subtitle {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works__block {
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.works__text {
+  font-size: $main-font-size;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: $p-color;
+}
+
+.works__list .link {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.works__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.works__text-thumb {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 22%;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: $primary-white-color;
+}
+
+.works__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $work-bcg-color;
+
+  transition: transform $duration-timing-function;
+
+  .link:hover &,
+  .link:focus & {
+    transform: translateY(0);
+  }
+}

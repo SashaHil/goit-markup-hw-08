@@ -1,0 +1,142 @@
+.footer-page {
+  padding: 60px 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  background-color: $hero-footer-color;
+}
+
+.footer-page__items {
+  display: flex;
+  gap: 93px;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: $primary-white-color;
+}
+
+.address {
+  display: block;
+
+  font-style: normal;
+}
+
+.address__contact {
+  display: block;
+  margin-bottom: 9px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.address__contact .link {
+  text-decoration: none;
+
+  color: $address-color;
+
+  transition: color $duration-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__contact--white .link {
+  color: $primary-white-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-page__social-text,
+.footer-page__mail {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.footer-page__list {
+  display: flex;
+  gap: 10px;
+  & .link:hover,
+  & .link:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-page__social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $primary-white-color;
+  background-color: $svg-background-color;
+
+  transition: background-color $duration-timing-function;
+}
+
+.footer-page__socail-icons {
+  fill: currentColor;
+}
+
+.footer-page__input {
+  width: 355px;
+  min-height: 50px;
+
+  margin: 0;
+  padding: 0 18px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: $address-color;
+
+  outline: transparent;
+
+  transition: filter $duration-timing-function border $duration-timing-function;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+.footer-page__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $address-color;
+}
+
+.btn--footer {
+  min-width: 200px;
+
+  margin-left: 12px;
+  padding: 10px 0;
+}
+
+.footer-page__icon-send {
+  margin-left: 5px;
+
+  vertical-align: middle;
+}
