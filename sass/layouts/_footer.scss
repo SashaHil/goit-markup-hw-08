@@ -131,16 +131,15 @@
 }
 
 .footer-page__input {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
   @media screen and (max-width: 1199px) {
     width: 450px;
-  }
-  @media screen and (max-width: 479px) {
-    width: 410px;
   }
   @media screen and (min-width: 1200px) {
     width: 355px;
   }
-
   min-height: 50px;
 
   margin: 0;
