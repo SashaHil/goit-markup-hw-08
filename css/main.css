@@ -199,16 +199,27 @@ textarea {
 }
 
 .hero__title {
-  width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .btn--main {
@@ -509,7 +520,7 @@ textarea {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__logo {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -724,14 +735,12 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-page__items {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -747,7 +756,7 @@ textarea {
   margin-bottom: 20px;
   color: #ffffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__logo {
     text-align: center;
   }
@@ -757,9 +766,10 @@ textarea {
   display: block;
   font-style: normal;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -798,6 +808,12 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .footer-page__social-text,
+.footer-page__mail {
+    text-align: center;
+  }
 }
 
 .footer-page__list {
@@ -840,7 +856,6 @@ textarea {
 
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .footer-page__field {
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -873,6 +888,11 @@ textarea {
 @media screen and (max-width: 1199px) {
   .footer-page__input {
     width: 450px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer-page__input {
+    width: 410px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -920,8 +940,9 @@ textarea {
 }
 
 .btn--footer {
-  min-width: 200px;
+  margin-left: 12px;
   padding: 10px 0;
+  min-width: 200px;
 }
 @media screen and (max-width: 767px) {
   .btn--footer {
@@ -976,8 +997,6 @@ textarea {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -986,6 +1005,18 @@ textarea {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__text {
@@ -1120,14 +1151,23 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 20px 0 30px 0;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+  }
 }
 
 .checkbox__form {
