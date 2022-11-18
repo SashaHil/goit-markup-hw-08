@@ -26,7 +26,7 @@
           <a href="./index.html" class="logo"
             ><span class="logo__word">Web</span>Studio</a
           >
-          <!-- <ul class="site-nav list">
+          <ul class="site-nav list">
             <li class="site-nav__link">
               <a href="#" class="site-nav__link site-nav__link--current link"
                 >Студія</a
@@ -35,10 +35,10 @@
             <li class="site-nav__link">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="site-nav__link">
+            <!-- <li class="site-nav__link">
               <a href="#" class="link">Контакти</a>
-            </li>
-          </ul> -->
+            </li> -->
+          </ul>
         </nav>
 
         <!-- <ul class="communication list">
@@ -136,6 +136,7 @@
             <li class="photo__items">
               <div class="photo__thumb">
                 <img
+                  srcset="./images/pc.jpg 1x, ./images/pc@2x-min.jpg 2x"
                   src="./images/pc.jpg"
                   alt="Робить щось на коп'ютері"
                   width="370"
@@ -146,6 +147,10 @@
             <li class="photo__items">
               <div class="photo__thumb">
                 <img
+                  srcset="
+                    ./images/nootebook.jpg        1x,
+                    ./images/nootebook@2x-min.jpg 2x
+                  "
                   src="./images/nootebook.jpg"
                   alt="Робить щось на ноутбуці"
                   width="370"
@@ -156,6 +161,10 @@
             <li class="photo__items">
               <div class="photo__thumb">
                 <img
+                  srcset="
+                    ./images/planshet.jpg        1x,
+                    ./images/planshet@2x-min.jpg 2x
+                  "
                   src="./images/planshet.jpg"
                   alt="Робить щось на планшеті"
                   width="370"
@@ -173,7 +182,32 @@
 
           <ul class="team__list list">
             <li class="team__items">
-              <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/igor-min.jpg 1x, ./images/igor@2x-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-tablet-min.jpg    1x,
+                    ./images/igor-tablet@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-mob-min.jpg    1x,
+                    ./images/igor-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/igor-min.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="460"
+                  height="450"
+                />
+              </picture>
               <div class="team__block">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -230,7 +264,32 @@
               </div>
             </li>
             <li class="team__items">
-              <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="./images/olga-min.jpg 1x, ./images/olga@2x-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-tablet-min.jpg    1x,
+                    ./images/olga-tablet@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-mob-min.jpg    1x,
+                    ./images/olga-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/olga-min.jpg"
+                  alt="Ольга Рєпіна"
+                  width="460"
+                  height="450"
+                />
+              </picture>
               <div class="team__block">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -287,7 +346,35 @@
               </div>
             </li>
             <li class="team__items">
-              <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-min.jpg    1x,
+                    ./images/mykola@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tablet-min.jpg    1x,
+                    ./images/mykola-tablet@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-mob-min.jpg    1x,
+                    ./images/mykola-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mykola-min.jpg"
+                  alt="Микола Тарасов"
+                  width="460"
+                  height="450"
+                />
+              </picture>
               <div class="team__block">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -344,11 +431,35 @@
               </div>
             </li>
             <li class="team__items">
-              <img
-                src="./images/mykhaylo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhaylo-min.jpg    1x,
+                    ./images/mykhaylo@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhaylo-tablet-min.jpg    1x,
+                    ./images/mykhaylo-tablet@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhaylo-mob-min.jpg    1x,
+                    ./images/mykhaylo-mob@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mykhaylo-min.jpg"
+                  alt="Михайло Єрмаков"
+                  width="460"
+                  height="450"
+                />
+              </picture>
               <div class="team__block">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
