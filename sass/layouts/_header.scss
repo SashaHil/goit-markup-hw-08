@@ -166,6 +166,15 @@
 .mob-nav__link .mob-nav__link--current {
   color: $accent-color;
 }
+
+.communication-mob {
+  margin-bottom: 64px;
+}
+
+.communication-mob li {
+  margin-bottom: 32px;
+}
+
 .communication-mob .link {
   font-weight: 500;
   font-size: 24px;
@@ -182,10 +191,6 @@
     line-height: 1.17;
     color: $accent-color;
   }
-}
-
-.communication-mob:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .menu-open {

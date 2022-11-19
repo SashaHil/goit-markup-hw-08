@@ -190,9 +190,6 @@
 .checkbox__icon {
   display: inline-block;
 
-  /* width: 16px;
-  height: 15px; */
-
   margin-right: 7px;
 
   border: 2px solid $text-color;
@@ -201,6 +198,7 @@
   transition: background-color $duration-timing-function,
     border-radius $duration-timing-function,
     border-color $duration-timing-function;
+
   .checkbox__form:checked + & {
     background-size: contain;
     background-origin: border-box;

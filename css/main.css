@@ -250,6 +250,14 @@ textarea {
   color: #2196f3;
 }
 
+.communication-mob {
+  margin-bottom: 64px;
+}
+
+.communication-mob li {
+  margin-bottom: 32px;
+}
+
 .communication-mob .link {
   font-weight: 500;
   font-size: 24px;
@@ -264,10 +272,6 @@ textarea {
   font-size: 34px;
   line-height: 1.17;
   color: #2196f3;
-}
-
-.communication-mob:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1338,8 +1342,6 @@ textarea {
 
 .checkbox__icon {
   display: inline-block;
-  /* width: 16px;
-  height: 15px; */
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
