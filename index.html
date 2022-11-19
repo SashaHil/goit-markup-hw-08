@@ -35,13 +35,13 @@
             <li class="site-nav__link">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <!-- <li class="site-nav__link">
+            <li class="site-nav__link">
               <a href="#" class="link">Контакти</a>
-            </li> -->
+            </li>
           </ul>
         </nav>
 
-        <!-- <ul class="communication list">
+        <ul class="communication list">
           <li>
             <a href="mailto:info@devstudio.com" class="link"
               ><svg class="communication__icon" width="16" height="12">
@@ -56,7 +56,55 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="header-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu" data-menu>
+        <div class="container">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="header-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-burger"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-nav list">
+              <li class="mob-nav__link">
+                <a href="#" class="mob-nav__link mob-nav__link--current link"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-nav__link">
+                <a href="./portfolio.html" class="link">Портфоліо</a>
+              </li>
+              <li class="mob-nav__link">
+                <a href="#" class="link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <ul class="communication-mob list">
+              <li>
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -774,5 +822,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
