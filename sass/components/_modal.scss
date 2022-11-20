@@ -161,7 +161,11 @@
 }
 
 .checkbox {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 320px) {
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: 480px) {
     font-size: 12px;
   }
 
@@ -191,6 +195,11 @@
   display: inline-block;
 
   margin-right: 7px;
+
+  @media screen and (max-width: 480px) {
+    width: 12px;
+    height: 12px;
+  }
 
   border: 2px solid $text-color;
   border-radius: 2px;
@@ -225,7 +234,7 @@
 
   color: $accent-color;
 
-  transition: $duration-timing-function;
+  transition: color $duration-timing-function;
   &:hover,
   &:focus {
     color: #188ce8;

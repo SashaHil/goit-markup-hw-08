@@ -9,6 +9,10 @@
 }
 
 .team__title {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -27,7 +31,7 @@
   width: 100%;
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {

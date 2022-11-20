@@ -1,0 +1,125 @@
+.menu-open {
+  @media screen and (max-width: 767px) {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 48px 40px;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1;
+
+  background-color: $primary-white-color;
+}
+
+.header-icon {
+  transition: fill $duration-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+.mob-nav {
+  margin-bottom: 30px;
+}
+.mob-nav__link .link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $text-color;
+
+  transition: color $duration-timing-function;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.mob-nav__link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav__link .mob-nav__link--current {
+  color: $accent-color;
+}
+
+.communication-mob {
+  margin-bottom: 64px;
+}
+
+.communication-mob li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.communication-mob .link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $tel-mail-color;
+
+  transition: color $duration-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.communication-mob .mob-tel {
+  font-size: 34px;
+  line-height: 1.17;
+}
+
+.header-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-socials .link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $accent-color;
+}
+
+.header-social__items:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-close {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  @media screen and (max-width: 767px) {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

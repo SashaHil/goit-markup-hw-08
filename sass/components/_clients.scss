@@ -7,6 +7,10 @@
 }
 
 .clients__title {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -19,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
   & .link:hover,
   & .link:focus {
     border: 1px solid $accent-color;
@@ -36,7 +41,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 3);
   }
-  
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 150px) / 6);
   }
@@ -45,7 +50,18 @@
 .clients__link {
   display: flex;
   justify-content: center;
-  padding: 16px 30px;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 30px;
+  }
 
   color: $svg-color;
   border: 1px solid $svg-color;
