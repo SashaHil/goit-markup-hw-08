@@ -28,6 +28,22 @@
   z-index: 1;
 
   background-color: $primary-white-color;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity $duration-timing-function,
+    visibility $duration-timing-function;
+}
+
+.mob-menu.is-hidden {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+
+  transition: opacity $duration-timing-function,
+    visibility $duration-timing-function;
 }
 
 .header-icon {
@@ -67,10 +83,9 @@
 
 .communication-mob {
   margin-bottom: 64px;
-}
-
-.communication-mob li:not(:last-child) {
-  margin-bottom: 32px;
+  & li:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .communication-mob .link {
@@ -97,13 +112,11 @@
 .header-socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header-socials .link {
   display: block;
-
-  padding-right: 10px;
 
   font-weight: 500;
   font-size: 18px;
@@ -114,8 +127,17 @@
   color: $accent-color;
 }
 
-.header-socials .link {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.header-social__items {
+  &:not(:first-child) {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      left: -10px;
+      height: 22px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
 }
 
 .menu-close {
