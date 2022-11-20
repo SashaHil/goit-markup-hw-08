@@ -12,6 +12,12 @@
     visibility $duration-timing-function;
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
@@ -22,6 +28,7 @@
     /* top:50%; */
     top: 53%;
     left: 50%;
+    width: 97%;
   }
 
   @media screen and (min-width: 480px) {
@@ -163,6 +170,11 @@
 .checkbox {
   @media screen and (min-width: 320px) {
     font-size: 8px;
+  }
+
+  @media screen and (min-width: 400px) {
+    justify-content: center;
+    font-size: 10px;
   }
 
   @media screen and (min-width: 480px) {

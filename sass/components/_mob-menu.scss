@@ -97,10 +97,14 @@
 .header-socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .header-socials .link {
+  display: block;
+
+  padding-right: 10px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -110,7 +114,7 @@
   color: $accent-color;
 }
 
-.header-social__items:not(:last-child) {
+.header-socials .link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
