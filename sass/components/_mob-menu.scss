@@ -29,18 +29,18 @@
 
   background-color: $primary-white-color;
 
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
 
   transition: opacity $duration-timing-function,
     visibility $duration-timing-function;
 }
 
 .mob-menu.is-hidden {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: initial;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 
   transition: opacity $duration-timing-function,
     visibility $duration-timing-function;
