@@ -107,6 +107,11 @@
 .communication-mob .mob-tel {
   font-size: 34px;
   line-height: 1.17;
+  color: $accent-color;
+  .communication-mob &:hover,
+  &:focus {
+    color: $tel-mail-color;
+  }
 }
 
 .header-socials {

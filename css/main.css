@@ -366,6 +366,10 @@ textarea {
 .communication-mob .mob-tel {
   font-size: 34px;
   line-height: 1.17;
+  color: #2196f3;
+}
+.communication-mob .communication-mob .mob-tel:hover, .communication-mob .mob-tel:focus {
+  color: #757575;
 }
 
 .header-socials {
@@ -861,11 +865,14 @@ textarea {
   margin-bottom: 50px;
   gap: 8px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 460px), (max-width: 480px) {
   .works__filter {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    width: 430px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .works__filter {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px), (min-width: 1200px) {
@@ -873,6 +880,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
 }
 
@@ -1480,11 +1488,6 @@ textarea {
   color: #757575;
 }
 @media screen and (min-width: 320px) {
-  .checkbox {
-    font-size: 8px;
-  }
-}
-@media screen and (min-width: 400px) {
   .checkbox {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
