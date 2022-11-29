@@ -209,18 +209,21 @@
     height: 12px;
   }
 
+  fill: transparent;
+
   border: 2px solid $text-color;
   border-radius: 2px;
 
   transition: background-color $duration-timing-function,
     border-radius $duration-timing-function,
-    border-color $duration-timing-function;
+    border-color $duration-timing-function, fill $duration-timing-function;
 
   .checkbox__form:checked + & {
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
     background-color: $accent-color;
+    fill: $primary-white-color;
   }
 
   .checkbox__form:focus + & {
