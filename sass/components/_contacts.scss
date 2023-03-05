@@ -1,0 +1,152 @@
+.contacts {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.logo_contacts {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+
+.contacts_communication {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.communications {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.communications .link {
+  display: block;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+
+    padding: 25px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+
+    font-size: 36px;
+  }
+
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $tel-mail-color;
+
+  transition: color $duration-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.tel-communications__icon {
+  @media screen and (max-width: 767px) {
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 16px;
+    height: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 16px;
+    height: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 36px;
+    height: 32px;
+  }
+}
+
+.letter-communications__icon {
+  @media screen and (max-width: 767px) {
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 12px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 12px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 30px;
+    height: 36px;
+  }
+}
+
+.link .tel-communications__icon,
+.link .letter-communications__icon {
+  fill: currentColor;
+}
+
+.map {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 300px;
+
+    box-shadow: 5px 5px 10px 17px rgb(0 0 0 / 5%);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 400px;
+
+    box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 700px;
+    height: 600px;
+
+    box-shadow: 5px 5px 70px 17px rgb(0 0 0 / 25%);
+  }
+}
